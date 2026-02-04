@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sanjiniiii😋😋</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="animated-bg"></div>
+<div class="sparkles"></div>
+
+<div class="app">
+
+  <!-- 1️⃣ INTRO -->
+  <section class="screen active">
+    <h1>Hey Sanjiniiii 🥰</h1>
+    <p class="subtitle">You won't be disappointed😌</p>
+    <button onclick="next()">Let's goooo!!</button>
+  </section>
+
+  <!-- 2️⃣ PUZZLE -->
+  <section class="screen puzzle">
+    <h2>Complete the Message 😋</h2>
+    <p class="subtitle">Click the missing letters</p>
+
+    <div class="sentence">
+      Y<span id="l1">_</span><span id="l2">_</span>
+      A<span id="l3">_</span>E
+      P<span id="l4">_</span>R<span id="l5">_</span>E<span id="l6">_</span>T
+    </div>
+
+    <div class="letters">
+      <div class="letter" onclick="pickLetter(this,'O',1)">O</div>
+      <div class="letter" onclick="pickLetter(this,'U',2)">U</div>
+      <div class="letter" onclick="pickLetter(this,'R',3)">R</div>
+      <div class="letter" onclick="pickLetter(this,'E',4)">E</div>
+      <div class="letter" onclick="pickLetter(this,'F',5)">F</div>
+      <div class="letter" onclick="pickLetter(this,'C',6)">C</div>
+
+      <div class="letter wrong" onclick="wrongLetter(this)">X</div>
+      <div class="letter wrong" onclick="wrongLetter(this)">Z</div>
+      <div class="letter wrong" onclick="wrongLetter(this)">Q</div>
+    </div>
+
+    <div class="progress">
+      <div id="bar"></div>
+    </div>
+  </section>
+
+  <!-- 3️⃣ CUSTOM PERSONALITY PARAGRAPH -->
+  <section class="screen">
+    <h1>Alright! Here we go!</h1>
+
+    <p class="big-text">
+    When i first saw you, you looked absolutely beautiful. You had left your hair open that day like you do most of the time but since that was the first time i saw you, i was absolutely mesmerised by you and i still am. I know i have mentioned about the red top you wear too and you look so gorgeous in that. Damn. 
+   What I really like about you is the way you are as a person. You think
+      things through, you care about how your choices affect others, and you
+      never take people’s feelings lightly. You’re mature, kind, and very
+      understanding, and that shows in the way you handle situations. I also
+      like how patient you are and how you don’t rush into things just because
+      it feels easy. Getting to know you made me like you for who you truly are,
+      not just at first glance. The more I saw this side of you, the more I
+      liked you, and that honestly means a lot to me.
+    </p>
+
+    <button onclick="next()">🙂</button>
+  </section>
+
+  <!-- 4️⃣ FUN QUESTION -->
+  <section class="screen">
+    <h2>Be honest… 😈</h2>
+    <p>Did you smile at least once?</p>
+
+    <div class="buttons">
+      <button class="yes" onclick="next()">Okay yes 😌</button>
+      <button class="no" onmouseover="runAway(this)">No 😈</button>
+    </div>
+  </section>
+
+  <!-- 5️⃣ ONE LAST THING -->
+  <section class="screen">
+    <h1>One Last Thing…..</h1>
+    <button onclick="next()">🙂</button>
+  </section>
+
+  <!-- 6️⃣ VALENTINE QUESTION -->
+  <section class="screen valentine">
+    <h1>Will you be my Valentine? 💖</h1>
+
+    <div class="buttons">
+      <button class="yes big" onclick="next()">YES 🥰</button>
+      <button class="no" onmouseover="runAway(this)">NO 😭</button>
+    </div>
+  </section>
+
+  <!-- 7️⃣ FINAL WINDOW (CUSTOM TEXT + PS + LINK) -->
+  <section class="screen end">
+    <p class="big-text">
+      I know i annoy you a lot but you can't escape that 😋
+    </p>
+    
+    <p class="big-text">
+      Try to be a more good student 😌.<br>
+      You have such a great teacher after all.
+    </p>
+
+        <p class="final-text">
+      PS: It was just for fun 😌.<br>
+      Don't take it too seriously sanjiniiii 😭.<br><br>
+
+      I just wanted to make you something for valentine<br>
+      and i decided to code and be productive 😌😋.<br><br>
+
+      I like you after all.
+    </p>
+
+    <button onclick="next()">🙂</button>
+  </section>
+
+  <!-- 8️⃣ SIGN-OFF -->
+  <section class="screen end">
+    <h1>Sorry to take up your time boss!!</h1>
+  <p class="big-text">
+  If you ever want to see this again,
+  <a href="https://rawhell211.github.io/sanj/" target="_blank">
+    here it is
+  </a>
+</p>
+
+  </section>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
